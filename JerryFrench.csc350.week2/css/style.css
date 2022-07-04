@@ -1,0 +1,64 @@
+/*
+    Jerry French
+    7/04/2022
+    CSC 350
+    Week 2-Lab 2  
+    */
+
+body {
+    background-color: rgb(210, 212, 71);
+}
+
+
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 15px auto;
+}
+
+/*chooses any class that starts with the chosen characters*/
+[class*="col-"]{
+
+margin-left: .5%;
+margin-right: .5%;
+min-height: 100px;
+
+}
+
+.col-3{
+    width: 24%;
+}
+
+.col-4{
+    width: 32.33%;
+}
+
+.col-6{
+    width: 49%;
+}
+
+.col-12{
+    width: 99%;
+    text-align: center;
+    
+}
+/*createsa a breakpoint for the width of col-*/
+@media screen and (max-width:500px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    border: dotted;
+    bottom:1px;
+    width:100%;
+    padding:5px;
+    background-color: rgb(155, 145, 15);
+}
